@@ -59,7 +59,10 @@ Desafio
 ## Docker versões
 
 Docker version 20.10.6 e acima são suportados.
+
 Docker-Compose version 1.29.1 e acima são suportados.
+
+Link: https://docker.com
 
 ## Como executar o deploy desse módulo
 ## Execução com o Docker-Compose
