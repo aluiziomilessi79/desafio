@@ -158,11 +158,14 @@ Depois disso volte na linha de comando que está em execução e execute o coman
 
 ## Terraform versões
 
-Terraform 0.14.7 e acima são suportados
-Terraform v1.1.2 (Mac) e acima são suportados
+Terraform 0.14.7 e acima são suportados.
+
+Terraform v1.1.2 (Mac) e acima são suportados.
+
+Link: https://www.terraform.io/downloads
 
 ## Como executar o deploy desse módulo
-## Requerimentos necessários para execução
+## Requesitos necessários para execução
 
 | Name | Version |
 |------|---------|
@@ -170,7 +173,11 @@ Terraform v1.1.2 (Mac) e acima são suportados
 | awscli | >= 1.0 |
 
 ## Configure AWS CLI
-OBS: Configuração utilizada para deploy da infraestrutura foi na região N.Virginia - US-EAST-1
+OBS: Configuração utilizada para deploy da infraestrutura foi na região N.Virginia - US-EAST-1 
+
+Será necessário uma conta na AWS com usuário contendo uma permissão adequada para a criação da aplicação.
+
+Link: https://aws.amazon.com/pt/cli/
 
 ```
 $ aws configure
@@ -186,9 +193,9 @@ OBS: dentro da pasta "terraform" onde colocou o código existem duas pastas!
 
 (1) Pasta "Beanstalk-Full" para preguiçoso , cria toda infraestrutura na AWS.
 
-(2) Pasta "Beanstalk-Custom-Network" é a mesma aplicação só que é para quem já tem uma configuração de network na AWS implementada, nesse caso será necessário colocar algumas informações de rede.
+(2) Pasta "Beanstalk-Custom-Network" só será usada, caso a conta da AWS já exista uma configuração de network (VPC,Subnet,Route,etc) implementada. Para isso será necessário colocar algumas informações simples, mas é para preguiçoso também.
 
-## Na pasta Beanstalk-Full para preguiçoso
+## Na pasta Beanstalk-Full para preguiçoso master high
 
 ### Criação da Infraestrutura
 ```
@@ -229,7 +236,8 @@ $ terraform apply
 $ terraform destroy
 ```
 
-## Na pasta Beanstalk-Custom-Network para quem já tem uma infraestrutura de rede.
+## Utilize apenas os procedimentos abaixo, caso tenha uma infraestrutura de rede na AWS.
+## Na pasta Beanstalk-Custom-Network para preguiçoso master low
 
 ### Dentro do arquivo "terraform.tfvars" edite e troque os parâmetros abaixo, de acordo com o seu ambiente.
 
