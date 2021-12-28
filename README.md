@@ -236,7 +236,7 @@ $ terraform apply
 $ terraform destroy
 ```
 
-![#1589F0] ## Utilize apenas os procedimentos abaixo, caso tenha uma infraestrutura de rede na AWS. `#1589F0`
+<span style="color:blue"> ## Utilize apenas os procedimentos abaixo, caso tenha uma infraestrutura de rede na AWS. </span>
 ## Na pasta Beanstalk-Custom-Network para preguiçoso master low
 
 ### Dentro do arquivo "terraform.tfvars" edite e troque os parâmetros abaixo, de acordo com o seu ambiente.
