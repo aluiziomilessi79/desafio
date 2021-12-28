@@ -307,6 +307,8 @@ $ terraform destroy
 
 OBS: Após a criação o OUTPUTS exibirá apenas as variáveis acima, lembra que somos preguiçosos.
 
+Agora é só abrir o browser como Google Chrome, Mozila, Firefox ou Edge e colocar na URL: http://awseb-AWSEB-XXXXXXXXX-0000000.us-east-1.elb.amazonaws.com e pronto !!!
+
 
 ## Authors
 
