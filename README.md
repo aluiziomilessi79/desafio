@@ -48,7 +48,7 @@ Desafio
 ```
 
 
-## (1) Entregável - Estrutura de arquivos do módulo docker 
+## (1) Entregável - Estrutura de arquivos - docker - Teste da Aplicação Local
 
 | Arquivo e Pasta | Descrição |
 |------|---------|
@@ -64,9 +64,9 @@ Docker-Compose version 1.29.1 e acima são suportados.
 
 Link: https://docker.com
 
-## Como executar o deploy desse módulo
+## Como executar o deploy com um único comando
 ## Execução com o Docker-Compose
-OBS: Dentro da pasta "docker", execute um único comando - passo abaixo e teste localmente seu preguiçoso.
+OBS: Dentro da pasta "docker", utilize o passo abaixo e teste localmente seu preguiçoso. 
 
 ```
 $ docker-compose up
@@ -142,18 +142,20 @@ Sua aplicação abrirá !!!
 
 Depois disso volte na linha de comando que está em execução e execute o comando CTRL+C para parar. 
 
+INFO ADICIONAL: Você poderá usa o mesmo comando com a opção "-d". Exemplo: docker-compose up -d (essa opção roda em background, mas será necessário executar o comando: docker-compose down para parar o serviço, após os testes)
+
 
 ## (2) Entregável - Estrutura de arquivos do módulo terraform
 
 | Arquivo | Descrição |
 |------|---------|
-| main.tf | arquivo de determina os recursos do S3 bucket que serão criados no processo. |
+| main.tf | arquivo de determina os serviços da AWS que serão criados no processo. |
 | outputs.tf | arquivo que determina a saída de informações pós-execução. |
 | variables.tf | arquivo com variáveis padrões para execução no Terraform, onde poderá ser customizada de acordo com a necessidade. |
-| policy.tf | arquivo que determina o recurso de política que será aplicada no bucket de ACL, onde poderá ser customizada de acordo com a necessidade. |
+| policy.tf | arquivo que determina o recurso de política que será aplicada nos serviços da AWS, onde poderá ser customizada de acordo com a necessidade. |
 | provider.tf | arquivo que determina o recurso e seus componentes que serão utilizado no processo de execução. |
 | version.tf | arquivo que determina a versão das biblioteca do terraform a serem utilizada na execução. |
-| terraform.tfvars | arquivo que determina o nome do bucket que será utilizado na criação do recurso. |
+| terraform.tfvars | arquivo que declara algumas variáveis que será utilizado na criação do recurso. |
 | latest.zip | arquivo que contém o Dockerrun.aws.json específico do beanstalk da aplicação |
 
 ## Terraform versões
